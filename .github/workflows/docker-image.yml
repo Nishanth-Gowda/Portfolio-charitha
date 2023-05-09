@@ -1,10 +1,10 @@
 name: Build App and Upload to Docker
+run-name: ${{ github.actor }} made a push to GitHub.
 
 on:
   push:
-    branches: [ "main" ]
-  pull_request:
-    branches: [ "main" ]
+    branches:
+    - master
 
 
 jobs:
