@@ -1,4 +1,4 @@
-name: Build App and Upload to Docker
+name: Build and Upload to Docker
 run-name: ${{ github.actor }} made a push to GitHub.
 
 on:
