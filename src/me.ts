@@ -1,284 +1,194 @@
 import {
+  FaAws,
   FaDocker,
   FaGithub,
+  FaJenkins,
   FaLinkedin,
   FaNewspaper,
   FaNode,
   FaPager,
   FaReact,
+  FaTwitter,
 } from "react-icons/fa";
 import {
+  SiApachejmeter,
   SiC,
+  SiCouchbase,
+  SiDatadog,
+  SiGit,
+  SiGithubactions,
   SiGooglecloud,
+  SiGrafana,
+  SiJava,
   SiJavascript,
+  SiJira,
   SiKubernetes,
+  SiMongodb,
+  SiMysql,
   SiPython,
+  SiRedis,
+  SiSelenium,
+  SiSpringboot,
+  SiTerraform,
   SiTypescript,
 } from "react-icons/si";
 
 import { IMe } from "./me.interface";
+import { Icon } from "@chakra-ui/react";
+import { icons } from "react-icons";
 
 export const me = {
-  name: "Mohammad Arham",
-  subtitle: "Computer Engineering Student & Backend Developer",
+  name: "Charitha Gowda",
+  subtitle: "Senior Test Engineer",
   tagline:
-    "I am a computer engineering student who loves to build software to create fun experiences.",
+    "Leading the Way in Test Engineering Excellence: Harnessing Expertise, Methodology, and Cutting-Edge Tools to Drive Quality Assurance and Deliver Superior Software Products.",
   about:
-    "Junior Computer Engineering student building production ready systems for my startup. I love making fun projects on the side usually for the memes. Checkout some of my recent projects below.",
-  location: "Amherst, MA",
-  image: "/assets/arhammusheer.jpeg",
+    "Experienced Senior Test Engineer adept at designing and executing comprehensive testing strategies. Meticulous attention to detail and expertise in automation tools ensure the delivery of high-quality software. Collaborative and adaptable, I drive projects to success while championing innovation and excellence in testing practices.",
+  location: "Bengaluru, India",
+  image: "/assets/charitha.jpg",
   education: [
     {
-      degree: "Bachelors of Science",
-      major: "Computer Engineering",
-      school: "University of Massachusetts Amherst",
-      graduation: "May 2024",
-      awards: ["Chancellor's Award: $12,000"],
+      degree: "Bachelors of Engineering",
+      major: "Computer Science Engineering(CSE)",
+      school: "Global Academy of Technology, Bengaluru",
+      graduation: " 2015 -  2019",
+      awards: ["Subjects: Java, OOPS, Networking, DBMS, OS"],
     },
   ],
   experience: [
     {
-      company: "AudioShelf",
-      location: "Amherst, MA",
-      position: "Co-Founder & CTO",
-      duration: "Feb 2022 - Present",
+      company: "Ola Financial Services SDET-1",
+      location: "Bengaluru, India",
+      position: "Software Development Engineer (Testing)",
+      duration: "January 2021 - February 2023",
       bullets: [
-        "Led the backend development pipeline and managed a team of 2 interns.",
-        "Developed the backend API and audio content delivery service using a microservices architecture on the Google Cloud Platform.",
-        "Developed a CMS dashboard and a supporting management API from scratch for content and user management and permissions using React.",
-        "Hosted the fully scalable serverless API on GCP Cloud run using docker, cloud builds, and cloud run which supported up to 200 concurrent users in production.",
+        "Part of Asset Finance Marketplace Testing Team which is the integration of Third Party APIs with the Ola platform.",
+        "Worked on End-to-End integration of multiple financers on to the Ola platform.",
+        "Was part of the Postpaid plus EMI Testing Team where IDFC users were provided various EMI options and could use it to pay via EMI with various internal and external merchants which included onboarding users to EMI , EMI pricing engine , debit and refund.",
+        "Was part of the Virtual Card Testing Team where users were able to use virtual cards just like the normal credit card without an actual physical card.",
+        "Was part of the Postpaid and Postpaid plus Testing Team where money lending happens through Ola and Non-Banking Finance Companies like ABFL and IDFC.",
       ],
     },
     {
-      company: "University of Massachusetts Amherst",
-      location: "Amherst, MA",
-      position: "IT Computer Classroom Assistant",
-      duration: "Fall 2021 - Present",
+      company: "Noon Academy SDET-1",
+      location: "Bengaluru, India",
+      position: "Software Development Engineer (Testing)",
+      duration: "July 2019 - January 2021",
       bullets: [
-        "Provided phone and in-person support for classroom technical issues.",
-        "Supported the upkeep and maintenance of computer labs managed by IT.",
-        "Notify and resolve any issues affecting workflows in computer labs using a ticket system.",
+        "Part of the core ClassRoom Experience Testing Team connecting Live Students to Live Teachers.",
+        "Part of multiple new Product launches like Competitions among students, BreakOut in between live classroom sessions , HighFive feature in classroom , Community Groups to create social engagement within students of similar communities which had a huge impact on Customer Experience and Customer Engagement on Noon Platform.",
+        "Part of the Platform Testing team which did multiple Tech revamp Activity on Customer App and Backend Side.",
+        "Executed a few Tech Activities like Data Migration from Old Service to New MicroServices.",
+        "Was part of the Consumer Growth from 2 Million Students to 6 Million Students studying on the Noon Platform.",
       ],
     },
-    {
-      company: "University of Massachusetts Amherst",
-      location: "Amherst, MA",
-      position: "IT Technical Consultant",
-      duration: "Summer 2022",
-      bullets: [
-        "Dismantled and deployed several hundred computers using scripted deployments and OS installs on Windows and Mac machines all around the UMass Campus.",
-        "Performed maintenance and upkeep of about 12-15 computer labs around campus.",
-        "Added new machines to the network and tested several hundred machines for issues and raised service requests.",
-      ],
-    },
-    {
-      company: "Cisco Systems",
-      location: "Bangalore, India",
-      position: "Front End Developer Intern - Talent Outreach Program",
-      duration: "Aug 2019 - Feb 2020",
-      bullets: [
-        "Collaborated with other team members to create an event management platform for high schools.",
-        "Developed a responsive design implementing a mobile-first approach.",
-        "Supported entire CRUD operations on the front end for the REST API.",
-        "Designed and developed a desktop and mobile UI dashboard for a Django WebApp.",
-      ],
-    },
+    
   ],
   projects: [
     {
-      name: "Croissant Chat",
+      name: "Bus Reservation System (DBMS)",
       description:
-        "A chat app which shows you chat rooms in a 5 mile radius to connect you with the community around you.",
+        "Designed a database using MYSQL as a backend and php for the front end.",
       contribution:
-        "I built the frontend client and backend infrastructure for the app using React.js, Node.js, and Prisma and PlanetScale. I also built an end to end websocket API implementing a pub/sub model. The platform is setup to autoscale using Google Cloud Run and Redis Pub/Sub.",
+        "I developed this complete application from the scratch.",
       technologies: [
-        "React",
-        "Typescript",
-        "Node.js",
-        "Prisma",
-        "PlanetScale",
-        "Websockets",
-        "Docker",
-        "Redis",
-        "Google Cloud",
+        "Java",
+        "HTML",
+        "CSS",
+        "MySQL"
+
       ],
       links: [
         {
-          name: "Website",
-          uri: "https://chat.croissant.one",
+          name: "Github",
+          uri: "https://github.com/",
         },
-        {
-          name: "Github (Frontend)",
-          uri: "https://github.com/arhammusheer/croissant-chat",
-        },
-        {
-          name: "Github (Backend)",
-          uri: "https://github.com/arhammusheer/croissant-chat-backend",
-        },
-      ],
-      image: "/assets/croissant-chat.png",
-    },
-    {
-      name: "Lord of the Lunchroom",
-      description:
-        "A project for HackUMass which let 2 people in a cowboy duel smart hats to see who wins the table in the wochester dining hall. The project won the funnest hack award.",
-      contribution:
-        "I wrote the code for the matchmaking server and the arduino smart hats which used infrared technology as guns and detectors and a displays to show the match status.",
-      image: "/assets/lord-of-the-lunchroom.jpg",
-      technologies: ["Node.js", "JavaScript", "ESP8266", "Arduino", "C++"],
-      links: [
-        {
-          name: "Devpost",
-          uri: "https://devpost.com/software/lord-of-the-lunchroom",
-        },
-        { name: "Image", uri: "/assets/lord-of-the-lunchroom.jpg" },
       ],
       
     },
     {
-      name: "Croissant.one (This Website)",
-      description: "A website to showcase my projects and resume",
+      name: "Simulation of Traffic Signal",
+      description:
+        "Designed the working of traffic signals using OpenGL computer graphics.",
       contribution:
-        "I built the entire website from scratch using React.js, TypeScript, and Chakra UI and deployed it on Vercel.",
-      technologies: ["React", "Typescript", "Chakra-UI", "Vercel"],
+        "I developed this complete application from the scratch",
+      technologies: ["Java", "OpenGL",],
       links: [
-        {
-          name: "Website",
-          uri: "https://croissant.one",
-        },
         {
           name: "Github",
-          uri: "https://github.com/arhammusheer/croissant.one",
+          uri: "https://github.com/",
         },
       ],
-      image: "/assets/croissant.svg",
-    },
-    {
-      name: "AudioShelf",
-      description:
-        "A mobile app with over 2k users to discover audiobooks in 30 languages and summarize them in 5 minutes",
-      contribution:
-        "I built the backend infrastructure for the app including authentication systems, OAuth Scope and a REST API. I also built an internal CMS dashboard to manage content publishing and translations.",
-      technologies: [
-        "Node.js",
-        "Express",
-        "MongoDB",
-        "Google Cloud",
-        "Docker",
-        "OAuth2",
-      ],
-      links: [
-        {
-          name: "Website",
-          uri: "https://getaudioshelf.com",
-        },
-        {
-          name: "Play Store",
-          uri: "https://play.google.com/store/apps/details?id=com.audioshelfapp",
-        },
-      ],
-      image: "https://content.getaudioshelf.com/logo.png",
-    },
-    {
-      name: "Dad API",
-      description: "A REST API to get dad jokes and pickup lines",
-      contribution:
-        "I built the entire API from scratch using Node.js and Express and deployed it on Google Cloud Run.",
-      technologies: ["Node.js", "Express", "Google Cloud", "Docker"],
-      links: [
-        {
-          name: "Joke Endpoint",
-          uri: "https://dad.croissant.one/api/joke",
-        },
-        {
-          name: "Pickup Line Endpoint",
-          uri: "https://dad.croissant.one/api/pickup",
-        },
-        {
-          name: "Github",
-          uri: "https://github.com/arhammusheer/dad-api",
-        },
-      ],
-      image: "/assets/dad.png",
-    },
-    {
-      name: "Loud Noises",
-      description:
-        "A web app to play loud noises when you're in the same chat room as them. Press the big red button to play a list of sounds on their device. No registration required.",
-      contribution:
-        "Built a full stack app with socket.io and deployed it on Heroku.",
-      technologies: ["Node.js", "Express", "Socket.io", "Heroku", "Bootstrap"],
-      links: [
-        {
-          name: "Website",
-          uri: "https://loudnoises.herokuapp.com/",
-        },
-      ],
-      image: "/assets/big-red-button.svg",
+      
     },
   ],
   skills: [
     {
-      name: "Typescript",
-      icon: SiTypescript,
+      name: "Java",
+      icon: SiJava,
     },
     {
-      name: "JavaScript",
-      icon: SiJavascript,
+      name: "TestNG",
+      
     },
     {
-      name: "Python",
-      icon: SiPython,
+      name: "Rest",
     },
     {
-      name: "Clang",
-      icon: SiC,
+      name: "Git",
+      icon: SiGit,
     },
     {
-      name: "React",
-      icon: FaReact,
+      name: "Jenkins",
+      icon: FaJenkins,
     },
     {
-      name: "Node.js",
-      icon: FaNode,
+      name: "Selenium",
+      icon: SiSelenium,
+    },    
+    {
+      name: "Rest Assured",
     },
     {
-      name: "Docker",
-      icon: FaDocker,
+      name: "Jmeter",
+      icon: SiApachejmeter,
     },
 
     {
-      name: "Google Cloud",
-      icon: SiGooglecloud,
+      name: "MySQL",
+      icon: SiMysql,
     },
     {
-      name: "Kubernetes",
-      icon: SiKubernetes,
+      name: "MongoDB",
+      icon: SiMongodb,
     },
+    {
+      name: "Couchbase",
+      icon: SiCouchbase,
+    },
+    {
+      name: "Redis",
+      icon: SiRedis,
+    },
+    {
+      name: "Jira",
+      icon: SiJira,
+    },
+    {
+      name: "DataDog",
+      icon: SiDatadog,
+    },
+    {
+      name: "Grafana",
+      icon: SiGrafana,
+    },
+
   ],
   social: [
     {
-      name: "Resume",
-      icon: FaNewspaper,
-      uri: "Mohammad-Arham-Resume.pdf",
-      hover: {
-        bg: "red.500",
-        color: "white",
-      },
-    },
-    {
-      name: "Github",
-      icon: FaGithub,
-      uri: "https://github.com/arhammusheer",
-      hover: {
-        bg: "gray.900",
-        color: "white",
-      },
-    },
-    {
       name: "LinkedIn",
       icon: FaLinkedin,
-      uri: "https://www.linkedin.com/in/mohammad-arham/",
+      uri: "https://www.linkedin.com/in/charitha-k-p-499273193/",
       hover: {
         bg: "blue.500",
         color: "white",
@@ -287,6 +197,6 @@ export const me = {
   ],
 
   contact: {
-    email: "arhammusheer@gmail.com",
+    email: "charitha1ga15cs043@gmail.com",
   },
 } as IMe;

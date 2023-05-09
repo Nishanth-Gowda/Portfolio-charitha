@@ -22,7 +22,7 @@ function App() {
     );
 
     console.log(
-      "%chttps://github.com/arhammusheer/croissant.one",
+      "%chttps://github.com/",
       "font-size: 1.1rem; color: #4299E1;"
     );
 

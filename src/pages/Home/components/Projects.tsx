@@ -109,7 +109,6 @@ const SingleProject = ({
         >
           {name}
         </Heading>
-        <Image src={image} h={"50px"} w={"50px"} borderRadius={"xl"} />
       </Flex>
       <Stack direction={"row"} spacing={2} mt={4}>
         {links.map((link) => (

@@ -18,10 +18,7 @@ export const Footer = () => {
         borderTop={"1px solid"}
         borderTopColor={useColorModeValue("gray.200", "gray.700")}
       >
-        <Text fontWeight={"bold"}>Made with ❤️ by arhammusheer</Text>
-        <Text>
-          All rights reserved © Mohammad Arham {new Date().getFullYear()}
-        </Text>
+        <Text fontWeight={"bold"}>Made with ❤️ by Nishanth</Text>
       </Stack>
     </Container>
   );

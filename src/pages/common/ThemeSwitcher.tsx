@@ -10,7 +10,7 @@ export const ThemeSwitcher = () => {
       icon={colorMode === "light" ? <FaMoon /> : <FaSun />}
       variant={"ghost"}
       onClick={toggleColorMode}
-      color={useColorModeValue("gray.300", "gray.600")}
+      color={useColorModeValue("gray.400", "gray.600")}
     />
   );
 };
