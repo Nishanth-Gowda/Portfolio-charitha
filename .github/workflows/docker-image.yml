@@ -4,7 +4,7 @@ run-name: ${{ github.actor }} made push to GitHub.
 on:
   push:
     branches:
-    - master
+    - main
 
 
 jobs:
